@@ -84,20 +84,37 @@ async def start_(c: Client, message: Message):
     user_id = message.from_user.id
     await add_served_user(user_id)
     await message.reply_text(
-        f"""ههݪاެ حبيب {message.from_user.mention()} ❤️‍🔥\n
-اެناެ بَۅت بَمميࢪ࣪اެتَ متَعدَدةَ ݪتشغِيݪ اެݪاغاެنِي فَي اެݪمَجمَۅعاتَ 🥇.
-
--› MᥲᎥꪀƚᥲᎥꪀᥱძ ხy -› [S᥆ᥙrᥴᥱ Frᥱᥱძ᥆ꪔ](http://t.me/xl444)
+        f""" {message.from_user.mention()} ❤️‍🔥\n
+╭─────────╮
+│ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 ꕸ
+│╭────────╯
+││╔╦╦╦═╦╗╔═╦═╦══╦═╗ 
+││║║║║╩╣╚╣═╣║║║║║╩╣
+│╰╚══╩═╩═╩═╩═╩╩╩╩═╝
+│╭ᯓтαℓαsнαηεᯓمرحبا انآ بــــوت 
+││
+│╰ᯓ لتشغيل الاغاني 
+│ 
+│╭ᯓ ❬اضف البوت الى المجموعة❭ 
+││
+│╰ᯓ ❬ارفع البوت ادمن في المجموعة❭
+│
+│╭ᯓ لتحكم ف البوت اتبع زر الاوامر
+│╰────────╮
+│ᯓ [𝐓𝑳𝐀𝐒𝐇𝐀𝐍𝐘](http://t.me/tlashany2)
+╰─────────╯
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🥇 اެضفني اެݪى مجمۅعتَك 🥇", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                    InlineKeyboardButton("ᯓاضفني للمجموعهᯓ", url=f"https://t.me/{me_bot.username}?startgroup=true"),
                 ],[
-                    InlineKeyboardButton("طࢪيقة اެݪتشغيݪ", callback_data="user_guide")
+                InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/"),
                 ],[
-                    InlineKeyboardButton("اެݪاۅاެمࢪ", callback_data="command_list"),
-                    InlineKeyboardButton("🦎 اެݪمطَۅࢪ", url=f"https://t.me/{OWNER_USERNAME}")                    
+                    InlineKeyboardButton("ᯓطريقه التشغيلᯓ", callback_data="user_guide"),
+                ],[
+                    InlineKeyboardButton("الاوامر", callback_data="command_list"),
+                    InlineKeyboardButton("Developer", url=f"https://t.me/{OWNER_USERNAME}")                    
                 ],
             ]
         ),
@@ -117,14 +134,14 @@ async def alive(c: Client, message: Message):
     buttons = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🥇 اوامر البوت ", callback_data="user_command"),
+                InlineKeyboardButton(" اوامر البوت ", callback_data="user_command"),
             ]
         ]
     )
     text = f"**- تابع الاوامر في الاسفل ↓ **"
     await c.send_photo(
         chat_id,
-        photo=f"https://te.legra.ph/file/402c519808f75bd9b1803.jpg",
+        photo=f"https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
         caption=text,
         reply_markup=buttons,
     )
@@ -184,8 +201,8 @@ async def new_chat(c: Client, m: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("-› قناة السورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                                InlineKeyboardButton("-› الاوامر", callback_data="command_list")
+                                InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"),
+                                InlineKeyboardButton(" الاوامر", callback_data="command_list")
                             ],[
                                 InlineKeyboardButton("-› حساب المساعد", url=f"https://t.me/{me_user.username}")
                             ]
