@@ -1,7 +1,7 @@
 {
-    "name": "سورس فريدوم بوت",
+    "name": "𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹",
     "description": "تشغيل الاغاني في المجموعات",
-    "logo": "https://te.legra.ph/file/46fa55b49b85c084159ce.jpg",
+    "logo": "https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
     "keywords": [
         "py-tgcalls",
         "telegram bot",
@@ -11,19 +11,19 @@
         "mongodb",
         "pyrogram"
     ],
-    "website": "https://t.me/xl444",
-    "repository": "https://github.com/muntazer995/RR8R9",
-    "success_url": "https://t.me/rr8r9",
+    "website": "https://t.me/tlashany2",
+    "repository": "https://github.com/Meshohhgvhb/medoo",
+    "success_url": "https://t.me/m_e_s_h_o",
     "env": {
      "API_ID": {
             "description": "لاتغيرها ابدا",
             "required": true,
-            "value": "19399491"
+            "value": "9495729"
         },
      "API_HASH": {
             "description": "لاتغيرها ابدا",
             "required": true,
-            "value": "eaa4f266934dfef23edb6d1f25e0b10f"
+            "value": "8a9aeb1762f724d591977b5dee4ad42c"
         },
         "BOT_TOKEN": {
             "description": "اكتب توكن",
