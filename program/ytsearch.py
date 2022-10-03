@@ -31,7 +31,7 @@ async def youtube_search(_, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("/search **needs an argument !**")
     query = message.text.split(None, 1)[1]
-    m = await message.reply_text("🦴 **جاري البحث...**")
+    m = await message.reply_text("**⚡**")
     results = YoutubeSearch(query, max_results=5).to_dict()
     text = ""
     for i in range(5):
@@ -47,6 +47,6 @@ async def youtube_search(_, message: Message):
         text,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("- مسح", callback_data="close_panel")]]
+            [[InlineKeyboardButton("مسح", callback_data="close_panel")]]
         ),
     )
