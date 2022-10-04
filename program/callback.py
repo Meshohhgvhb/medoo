@@ -69,6 +69,7 @@ async def start_set(_, query: CallbackQuery):
                     InlineKeyboardButton("ᯓطريقه التشغيلᯓ", callback_data="user_guide"),
                 ],[
                     InlineKeyboardButton("الاوامر", callback_data="command_list"),
+                ],[ 
                     InlineKeyboardButton("Developer", url=f"https://t.me/{OWNER_USERNAME}")
                 ],
             ]
@@ -132,7 +133,7 @@ async def commands_set(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("-› اوامر البوت", callback_data="user_command"),
+                    InlineKeyboardButton(" اوامر البوت", callback_data="user_command"),
                 ],[             
                     InlineKeyboardButton("-› ", callback_data="home_start")
                 ],
