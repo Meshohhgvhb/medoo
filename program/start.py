@@ -114,7 +114,6 @@ async def start_(c: Client, message: Message):
                     InlineKeyboardButton("ᯓطريقه التشغيلᯓ", callback_data="user_guide"),
                 ],[
                     InlineKeyboardButton("الاوامر", callback_data="command_list"),
-                ],[ 
                     InlineKeyboardButton("Developer", url=f"https://t.me/{OWNER_USERNAME}")                    
                 ],
             ]
