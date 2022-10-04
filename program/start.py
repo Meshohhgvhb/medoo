@@ -109,7 +109,7 @@ async def start_(c: Client, message: Message):
                 [
                     InlineKeyboardButton("ᯓاضفني للمجموعهᯓ", url=f"https://t.me/{me_bot.username}?startgroup=true"),
                 ],[
-                InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/"),
+                InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"),
                 ],[
                     InlineKeyboardButton("ᯓطريقه التشغيلᯓ", callback_data="user_guide"),
                 ],[
