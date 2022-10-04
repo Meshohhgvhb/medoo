@@ -83,9 +83,7 @@ async def _human_time_duration(seconds):
 async def start_(c: Client, message: Message):
     user_id = message.from_user.id
     await add_served_user(user_id)
-    await c.send_photo(chat_id,
-        photo=f"https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
-        caption=text,
+    await query.edit_message_text(
      f""" {message.from_user.mention()} ❤️‍🔥\n
 ╭─────────╮
 │ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 ꕸ
@@ -111,11 +109,12 @@ async def start_(c: Client, message: Message):
                 [
                     InlineKeyboardButton("ᯓاضفني للمجموعهᯓ", url=f"https://t.me/{me_bot.username}?startgroup=true"),
                 ],[
-                InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"),
+                    InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"),
                 ],[
                     InlineKeyboardButton("ᯓطريقه التشغيلᯓ", callback_data="user_guide"),
                 ],[
                     InlineKeyboardButton("الاوامر", callback_data="command_list"),
+                ],[ 
                     InlineKeyboardButton("Developer", url=f"https://t.me/{OWNER_USERNAME}")                    
                 ],
             ]
