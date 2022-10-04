@@ -108,7 +108,7 @@ async def leave_all(c: Client, message: Message):
     )
 
 
-@Client.on_message(command(["فتح كول", f"افتح"]) & other_filters)
+@Client.on_message(command(["فتح الكول", f"افتح"]) & other_filters)
 @check_blacklist()
 @authorized_users_only
 async def start_group_call(c: Client, m: Message):
@@ -132,7 +132,7 @@ async def start_group_call(c: Client, m: Message):
         )
 
 
-@Client.on_message(command(["انزل", f"اغلاق الكول"]) & other_filters)
+@Client.on_message(command(["اقفل", f"اغلاق الكول"]) & other_filters)
 @check_blacklist()
 @authorized_users_only
 async def stop_group_call(c: Client, m: Message):
