@@ -27,6 +27,8 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(text="⚡~تحكم", callback_data="stream_menu_panel"),
             InlineKeyboardButton(text="⚡~اغلاق", callback_data="set_close"),
+            ],[
+            InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"), 
         ]
     ]
 )
