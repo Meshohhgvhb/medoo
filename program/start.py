@@ -86,7 +86,7 @@ async def start_(c: Client, message: Message):
     await c.send_photo(chat_id,
         photo=f"https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
         caption=text,
-    text = f""" {message.from_user.mention()} ❤️‍🔥\n
+     f""" {message.from_user.mention()} ❤️‍🔥\n
 ╭─────────╮
 │ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 ꕸ
 │╭────────╯
