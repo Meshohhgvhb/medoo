@@ -38,7 +38,10 @@ from config import (
 @check_blacklist()
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
-    await query.edit_message_text(
+    await c.send_photo(
+        chat_id,
+        photo=f"https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
+        caption=text,
         f""" [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) ⚡~\n
 ╭─────────╮
 │ᯓ 𝐒𝐎𝐔𝐑𝐂𝐄 ꕸ
