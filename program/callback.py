@@ -16,7 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/licenses.html>
 """
 
-
 from driver.core import me_bot, me_user
 from driver.queues import QUEUE
 from driver.decorators import check_blacklist
@@ -69,7 +68,6 @@ async def start_set(_, query: CallbackQuery):
                     InlineKeyboardButton("ᯓطريقه التشغيلᯓ", callback_data="user_guide"),
                 ],[
                     InlineKeyboardButton("الاوامر", callback_data="command_list"),
-                ],[ 
                     InlineKeyboardButton("Developer", url=f"https://t.me/{OWNER_USERNAME}")
                 ],
             ]
