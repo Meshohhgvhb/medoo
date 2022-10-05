@@ -52,8 +52,8 @@ async def youtube_search(_, message: Message):
     )
 @Client.on_message(commandpro(["السورس", "سورس"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/569828c93d03e927a2949.mp4",
+    await message.reply_video(
+        video =f"https://telegra.ph/file/569828c93d03e927a2949.mp4",
         caption=f"""
         
 ╭─────────╮
