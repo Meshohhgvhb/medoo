@@ -53,7 +53,7 @@ async def youtube_search(_, message: Message):
 @Client.on_message(commandpro(["السورس", "سورس"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
+        photo=f"https://telegra.ph/file/569828c93d03e927a2949.mp4",
         caption=f"""
         
 ╭─────────╮
