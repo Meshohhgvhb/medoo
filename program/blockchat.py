@@ -88,7 +88,7 @@ async def blacklisted_chats_func(_, message: Message):
 @Client.on_message(commandpro(["البوت", "بوت"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/6111837a4b2586e21e96c.jpg",
+        photo=f"https://telegra.ph/file/c57446d330e048cda664e.jpg",
         caption=f"""
        يعم اسمي تلاشاني 😪
         """,
