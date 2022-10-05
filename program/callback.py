@@ -69,7 +69,7 @@ async def start_set(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"),   
                 ],[ 
-                    InlineKeyboardButton("", url=f"https://t.me/{OWNER_USERNAME}")
+                    InlineKeyboardButton("P꯭R꯭O꯭G꯭R꯭A꯭M꯭M꯭E꯭R꯭ T꯭L꯭A꯭S꯭H꯭A꯭N꯭Y꯭ 𖠜", url=f"https://t.me/{OWNER_USERNAME}")
                 ],
             ]
         ),
