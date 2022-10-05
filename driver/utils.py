@@ -138,7 +138,7 @@ async def stream_end_handler(_, u: Update):
         else:
             await bot.send_message(
                 chat_id,
-                f"⚡~ **تشغيل الاغانيه ف الانتظار**\n\n⚡~**الاسم** [{queue[0]}]({queue[1]}) | `{queue[2]}`\n⚡~ **الدردشة** `{chat_id}`",
+                f"⚡~ **جاري تشغيل الاغانيه **\n\n⚡~**الاسم** [{queue[0]}]({queue[1]}) | `{queue[2]}`\n⚡~ **الدردشة** `{chat_id}`",
                 disable_web_page_preview=True,
                 reply_markup=keyboard,
             )
