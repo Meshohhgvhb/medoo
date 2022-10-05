@@ -83,3 +83,23 @@ async def blacklisted_chats_func(_, message: Message):
         await message.reply_text("❌ no blacklisted chat.")
     else:
         await message.reply_text(text)
+        
+        
+@Client.on_message(commandpro(["البوت", "بوت"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://te.legra.ph/file/6111837a4b2586e21e96c.jpg",
+        caption=f"""
+       يعم اسمي تلاشاني 😪
+        """,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "P꯭R꯭O꯭G꯭R꯭A꯭M꯭M꯭E꯭R꯭ T꯭L꯭A꯭S꯭H꯭A꯭N꯭Y꯭ 𖠜", url=f"https://t.me/m_e_s_h_o")
+                ]
+            ]
+        ),
+    )
+
+Contac
