@@ -38,7 +38,7 @@ from config import (
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
     await message.reply_photo(
-        photo =f"https://telegra.ph/file/569828c93d03e927a2949.mp4",
+        photo =f"https://telegra.ph/file/c57446d330e048cda664e.jpg",
         caption=f""" [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) ⚡~\n
 ╭─────────╮
 │ᯓ [𝐒𝐎𝐔𝐑𝐂𝐄](http://t.me/tlashany2)
