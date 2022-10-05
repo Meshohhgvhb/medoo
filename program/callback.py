@@ -37,7 +37,7 @@ from config import (
 @check_blacklist()
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
-    await query.edit_message_text(   
+    await query.edit_message_text(
      f""" [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) ⚡~\n
 ╭─────────╮
 │ᯓ [𝐒𝐎𝐔𝐑𝐂𝐄](http://t.me/tlashany2)
