@@ -83,8 +83,9 @@ async def _human_time_duration(seconds):
 async def start_(c: Client, message: Message):
     user_id = message.from_user.id
     await add_served_user(user_id)
-    await message.reply_text(
-        f""" {message.from_user.mention()} ⚡\n
+    await message.reply_photo(
+        photo =f"https://telegra.ph/file/c57446d330e048cda664e.jpg",
+        caption=f""" {message.from_user.mention()} ⚡\n
 ╭─────────╮
 │ᯓ [𝐒𝐎𝐔𝐑𝐂𝐄](http://t.me/tlashany2)
 │╭────────╯
