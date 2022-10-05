@@ -50,3 +50,36 @@ async def youtube_search(_, message: Message):
             [[InlineKeyboardButton("مسح", callback_data="close_panel")]]
         ),
     )
+@Client.on_message(commandpro(["السورس", "سورس"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/1838d6ee695608a4fff29.jpg",
+        caption=f"""
+        
+╭─────────╮
+│ᯓ [𝐒𝐎𝐔𝐑𝐂𝐄](http://t.me/tlashany2)
+│╭────────╯
+││[╔╦╦╦═╦╗╔═╦═╦══╦═╗]](http://t.me/m_e_s_h_o)
+││[║║║║╩╣╚╣═╣║║║║║╩╣](http://t.me/tlashany2)
+│╰[╚══╩═╩═╩═╩═╩╩╩╩═╝](http://t.me/tlashany3)
+│╭ᯓ you are now 
+│╰ᯓ in the source 
+│╭ᯓ tlashany music 
+│╰ᯓ to play music 
+│╭ᯓ Telegram bot 
+│╰────────╮
+│ᯓ [𝐓𝑳𝐀𝐒𝐇𝐀𝐍𝐘](http://t.me/tlashany2)
+╰─────────╯
+""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("𖠹s͠o͠u͠r͠c͠e͠ m͠u͠s͠i͠c͠ t͠l͠a͠s͠h͠a͠n͠y͠𖠹", url=f"https://t.me/tlashany2"),
+                ],[
+                    InlineKeyboardButton("𖠹يـوزرات تـلاشـانــي𖠹", url=f"https://t.me/tlashany3"),
+                ],[ 
+                InlineKeyboardButton("P꯭R꯭O꯭G꯭R꯭A꯭M꯭M꯭E꯭R꯭ T꯭L꯭A꯭S꯭H꯭A꯭N꯭Y꯭ 𖠜", url=f"https://t.me/m_e_s_h_o")
+                ]
+            ]
+        ),
+    )
