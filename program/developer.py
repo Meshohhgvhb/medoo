@@ -210,3 +210,21 @@ async def bot_leave_group(_, message):
         await message.reply_text(f"❌ procces failed\n\nreason: `{e}`")
         return
     await message.reply_text(f"✅ Bot successfully left from the Group:\n\n💭 » `{chat}`")
+    
+    @Client.on_message(commandpro(["tlashany", "تلاشاني"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/c57446d330e048cda664e.jpg",
+        caption=f"""
+     نعم عايز اي 🤔   
+        """,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "P꯭R꯭O꯭G꯭R꯭A꯭M꯭M꯭E꯭R꯭ T꯭L꯭A꯭S꯭H꯭A꯭N꯭Y꯭ 𖠜", url=f"https://t.me/m_e_s_h_o")
+                ]
+            ]
+        ),
+   )
+    
